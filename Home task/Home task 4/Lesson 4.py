@@ -2,20 +2,31 @@
 
 # list_1 = ["john", "marta", "james", "amanda", "marianna"]
 # text_1 =' '.join(list_1)
-# text_2 = text_1.title()
-# list_1 = text_2.split()
-# print(list_1)
+# for i in text_1.split():
+#    print(i.capitalize())
 
 # task 2
 
-# list_1 = ["FirstItem", "FriendsList", "MyTuple"]
-# text_1 = str(list_1)
-# text_1 = text_1[0].capitalize() + text_1[1::]
-# for a in text_1:
-#     if a.isupper():
-#         # text_1 = text_1.replace(a, f"_{a.lower()}")
-#         text_1 = text_1.replace(a,'_' + str(a.lower()))
-# print(text_1)
+list_1 = ["FirstItem", "FriendsList", "MyTuple"]
+
+Fi = str(list_1[0])
+Fi = Fi[0].lower() + Fi[1:]
+Fr = str(list_1[1])
+Fr = Fr[0].lower() + Fr[1:]
+My = str(list_1[2])
+My = My[0].lower() + My[1:]
+for a in Fi:
+    if a.isupper():
+         Fi = Fi.replace(a, f"_{a.lower()}")
+         print(Fi)
+for a in Fr:
+    if a.isupper():
+        Fr = Fr.replace(a,    f"_{a.lower()}")
+        print(Fr)
+for a in My:
+    if a.isupper():
+         My = My.replace(a, f"_{a.lower()}")
+         print(My)
 
 # task 3
 
@@ -38,17 +49,25 @@
 # task 4
 
 # names = ['Jack', 'Leon', 'Alice', None, 32, 'Bob']
-# n = str(names)
-# delete_names = None, 32
+# names_2 = [x for x in names if type(x) != type(None) if type(x) != int]
+# print(names_2)
+#
 # for n in names:
-#   if n in delete_names:
-#      continue
-#   print(n)
+#   if type(n) != type(None) and type(n) != int:
+#    print(n)
 
 # 5 task
 
 # types = [1, 1000, 2, 12, {'key': 'value'}]
 #
+# for num in types:
+#     if type(num) is int:
+#         print(num)
+#         continue
+#     else: type(num) is dict
+#     print(f'цикл не працює з {type(num)} типом даних')
+#     break
+
 # for num in types:
 #     if type(num) is int:
 #         print(num)
